@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sbt $1
+java -Xmx512M -jar infra/sbt/bin/sbt-launch.jar "$@"
