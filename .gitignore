@@ -1,0 +1,7 @@
+target/
+dist/
+.idea
+.idea_modules
+logs
+chromedriver.log
+infra/sbt/tmp/
