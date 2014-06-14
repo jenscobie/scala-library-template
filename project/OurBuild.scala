@@ -1,5 +1,6 @@
 import sbt._
 import Keys._
+import Tasks._
 
 object OurBuild extends Build {
 
@@ -8,7 +9,9 @@ object OurBuild extends Build {
     version := "1.0",
     scalaVersion := "2.10.3",
     libraryDependencies ++= Seq(Dependencies.specs2)
-  )
+  ) ++
+    compileAllTask ++
+    preCommitTask
 
   lazy val root = Project(id = "scala-library-template",
     base = file("."),
